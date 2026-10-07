@@ -1,3 +1,8 @@
+/* References:
+   MDN Web Docs (n.d.) CSS: Cascading Style Sheets.
+   Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
+   Nielsen, J. (2012) Usability 101: Introduction to usability.
+   Available at: https://www.nngroup.com/articles/usability-101-introduction-to-usability/ */
 /* =========================================
    StudyStream - Mobile First Stylesheet
    ========================================= */
@@ -57,7 +62,14 @@ img {
     height: auto;
     display: block;
 }
+/* ID selector example - used for specific page section headings */
+#main-content {
+    outline: none;
+}
 
+#hero-heading {
+    letter-spacing: -0.02em;
+}
 ul {
     list-style: none;
 }

@@ -1,3 +1,8 @@
+// References:
+// Open-Meteo (n.d.) Free Weather API.
+// Available at: https://open-meteo.com/en/docs
+// MDN Web Docs (n.d.) async function.
+// Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 // =========================================
 // StudyStream - planner.js
 // Uses the Open-Meteo API (free, no API key required)

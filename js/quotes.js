@@ -1,3 +1,8 @@
+// References:
+// FreeAPI (n.d.) Public Quotes API.
+// Available at: https://api.freeapi.app/#/Public%20APIs/getQuotes
+// MDN Web Docs (n.d.) Window.localStorage.
+// Available at: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 // =========================================
 // StudyStream - quotes.js
 // Uses the FreeAPI Quotes API (free, no key required)

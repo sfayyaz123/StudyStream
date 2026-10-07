@@ -1,3 +1,8 @@
+// References:
+// MDN Web Docs (n.d.) Introduction to events.
+// Available at: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
+// MDN Web Docs (n.d.) Document: DOMContentLoaded event.
+// Available at: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 // =========================================
 // StudyStream - main.js
 // Handles navigation toggle and newsletter form

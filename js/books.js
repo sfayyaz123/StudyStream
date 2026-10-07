@@ -1,3 +1,8 @@
+// References:
+// MDN Web Docs (n.d.) Using the Fetch API.
+// Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+// Open Library API (n.d.) Search API.
+// Available at: https://openlibrary.org/developers/api
 // =========================================
 // StudyStream - books.js
 // Handles the Book Finder using the Open Library API
