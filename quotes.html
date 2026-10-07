@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate motivational quotes to keep you focused while studying.">
+    <title>StudyStream | Motivation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="StudyStream home">
+                <span class="logo-mark" aria-hidden="true">📚</span>
+                <span class="logo-text">StudyStream</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Book Finder</a></li>
+                    <li><a href="planner.html">Study Planner</a></li>
+                    <li><a href="quotes.html" class="active" aria-current="page">Motivation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Page Intro -->
+        <section class="page-intro" aria-labelledby="page-heading">
+            <div class="container">
+                <h1 id="page-heading">Motivation</h1>
+                <p class="lead">Get an inspiring quote to keep you focused when studying gets tough.</p>
+            </div>
+        </section>
+
+        <!-- Quote Controls -->
+        <section class="search-section" aria-labelledby="quote-controls-heading">
+            <div class="container">
+                <h2 id="quote-controls-heading" class="visually-hidden">Quote options</h2>
+
+                <form id="quoteForm" class="book-search-form" novalidate>
+                    <div class="form-group">
+                        <label for="quote-category">Choose a category</label>
+                        <select id="quote-category" name="category">
+                            <option value="inspirational">Inspirational</option>
+                            <option value="success">Success</option>
+                            <option value="education">Education</option>
+                            <option value="life">Life</option>
+                            <option value="motivational">Motivational</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quote-count">Number of quotes</label>
+                        <input 
+                            type="number" 
+                            id="quote-count" 
+                            name="count" 
+                            value="1" 
+                            min="1" 
+                            max="5">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Generate Quotes</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" aria-labelledby="quote-results-heading">
+            <div class="container">
+                <h2 id="quote-results-heading" class="visually-hidden">Generated quotes</h2>
+
+                <p id="quoteStatus" class="status-message" role="status" aria-live="polite"></p>
+
+                <div id="quoteResults" class="quote-grid"></div>
+            </div>
+        </section>
+
+        <!-- Saved Quotes Section -->
+        <section class="saved-section" aria-labelledby="saved-heading">
+            <div class="container">
+                <h2 id="saved-heading" class="section-title">Your saved quotes</h2>
+                <p class="section-subtitle">Quotes you have saved are stored in your browser.</p>
+
+                <div id="savedQuotes" class="quote-grid"></div>
+                <button id="clearSaved" class="btn btn-secondary" style="margin-top: 1rem;">Clear all saved</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 StudyStream. Created for educational purposes.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/quotes.js"></script>
+</body>
+</html>

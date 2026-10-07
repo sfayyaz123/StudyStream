@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudyStream - Find books, plan study sessions, and stay motivated.">
+    <title>StudyStream | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="StudyStream home">
+                <span class="logo-mark" aria-hidden="true">📚</span>
+                <span class="logo-text">StudyStream</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="books.html">Book Finder</a></li>
+                    <li><a href="planner.html">Study Planner</a></li>
+                    <li><a href="quotes.html">Motivation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content">
+
+        <!-- Hero section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1 id="hero-heading">Your study companion, all in one place</h1>
+                    <p class="lead">
+                        Find the right books, plan your study sessions around the weather,
+                        and stay motivated with daily quotes. StudyStream brings it all together.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="books.html" class="btn btn-primary">Find a Book</a>
+                        <a href="planner.html" class="btn btn-secondary">Plan a Session</a>
+                    </div>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <div class="hero-illustration">📖</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features section -->
+        <section class="features" aria-labelledby="features-heading">
+            <div class="container">
+                <h2 id="features-heading" class="section-title">What you can do</h2>
+                <p class="section-subtitle">Three tools designed to support your learning journey.</p>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🔍</div>
+                        <h3>Book Finder</h3>
+                        <p>Search millions of books by title or author and discover your next read.</p>
+                        <a href="books.html" class="feature-link">Explore books &rarr;</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🌤️</div>
+                        <h3>Study Planner</h3>
+                        <p>Check the weather for your study day and plan the perfect session.</p>
+                        <a href="planner.html" class="feature-link">Plan a session &rarr;</a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">💬</div>
+                        <h3>Motivation</h3>
+                        <p>Generate inspiring quotes to keep you focused when studying gets tough.</p>
+                        <a href="quotes.html" class="feature-link">Get motivated &rarr;</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / contact form section -->
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+            <div class="container newsletter-inner">
+                <div class="newsletter-text">
+                    <h2 id="newsletter-heading">Stay in the loop</h2>
+                    <p>Sign up for weekly study tips and new features.</p>
+                </div>
+
+                <form class="newsletter-form" id="newsletterForm" novalidate>
+                    <div class="form-group">
+                        <label for="newsletter-name">Name</label>
+                        <input type="text" id="newsletter-name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-email">Email address</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter-interest">Main interest</label>
+                        <select id="newsletter-interest" name="interest" required>
+                            <option value="">Please choose...</option>
+                            <option value="books">Finding books</option>
+                            <option value="planning">Study planning</option>
+                            <option value="motivation">Motivation</option>
+                            <option value="all">All of the above</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <p class="form-message" id="newsletterMessage" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 StudyStream. Created for educational purposes.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

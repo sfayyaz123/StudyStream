@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your study sessions around the weather using the Open-Meteo API.">
+    <title>StudyStream | Study Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="StudyStream home">
+                <span class="logo-mark" aria-hidden="true">📚</span>
+                <span class="logo-text">StudyStream</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Book Finder</a></li>
+                    <li><a href="planner.html" class="active" aria-current="page">Study Planner</a></li>
+                    <li><a href="quotes.html">Motivation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Page Intro -->
+        <section class="page-intro" aria-labelledby="page-heading">
+            <div class="container">
+                <h1 id="page-heading">Study Planner</h1>
+                <p class="lead">Plan your study session around the weather. Enter your details below.</p>
+            </div>
+        </section>
+
+        <!-- Planner Form Section -->
+        <section class="search-section" aria-labelledby="planner-heading">
+            <div class="container">
+                <h2 id="planner-heading" class="visually-hidden">Plan your study session</h2>
+
+                <form id="plannerForm" class="book-search-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="planner-city">Your city</label>
+                        <input 
+                            type="text" 
+                            id="planner-city" 
+                            name="city" 
+                            placeholder="e.g. London, Sheffield, Manchester" 
+                            required
+                            minlength="2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="planner-date">Study date</label>
+                        <input 
+                            type="date" 
+                            id="planner-date" 
+                            name="date" 
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="planner-duration">Session length (hours)</label>
+                        <input 
+                            type="number" 
+                            id="planner-duration" 
+                            name="duration" 
+                            value="2" 
+                            min="1" 
+                            max="12">
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend>Preferred setting</legend>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="setting" value="indoor" checked>
+                                Indoor
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="setting" value="outdoor">
+                                Outdoor
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="setting" value="either">
+                                Either
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="planner-notes">Study notes (optional)</label>
+                        <textarea 
+                            id="planner-notes" 
+                            name="notes" 
+                            rows="3" 
+                            maxlength="200"
+                            placeholder="What are you studying?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Get Weather & Plan</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" aria-labelledby="planner-results-heading">
+            <div class="container">
+                <h2 id="planner-results-heading" class="visually-hidden">Your study plan</h2>
+
+                <p id="plannerStatus" class="status-message" role="status" aria-live="polite"></p>
+
+                <div id="plannerResults" class="planner-results"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 StudyStream. Created for educational purposes.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/planner.js"></script>
+</body>
+</html>
